@@ -8,5 +8,11 @@ import { AppMainComponent } from './app.main.component';
 })
 export class AppTopBarComponent {
 
+    settingsDialog=false;
     constructor(public app: AppComponent, public appMain: AppMainComponent) {}
+
+    settings()
+    {
+      this.settingsDialog=true;
+    }
 }
