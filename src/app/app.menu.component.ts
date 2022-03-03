@@ -36,7 +36,7 @@ export class AppMenuComponent implements OnInit {
                     {
                         label: "Mutual Funds",
                         icon: "pi pi-fw pi-check-square",
-                        routerLink: ["/main/uikit/dataUpload"],
+                        routerLink: ["/main/client/mutualFund"],
                     },
                     {
                         label: "FII / FPI",

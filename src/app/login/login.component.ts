@@ -22,10 +22,26 @@ export class LoginComponent implements OnInit {
 
     ngOnInit(): void {}
 
-    onSave() {
+    onSave(project) {
         this.data = this.project.value;
 
         console.log(this.data);
-        this.router.navigate(["/main"]);
+
+        if(project.value.username==='akki' && project.value.password==='1760')
+        {
+            this.router.navigate(["/main/client"]);
+        }
+        else if(project.value.username==='shiv' && project.value.password==='123')
+        {
+            this.router.navigate(['/masterAdmin'])
+        }
+        else if(project.value.username==='akshay' && project.value.password==='123')
+        {
+            this.router.navigate(['/analystAdmin'])
+        }
+        else
+        {
+            alert("username or password is incorrect")
+        }
     }
 }

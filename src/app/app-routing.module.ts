@@ -22,6 +22,10 @@ import {AppInvoiceComponent} from './pages/app.invoice.component';
 import {AppHelpComponent} from './pages/app.help.component';
 
 import { LoginComponent } from './login/login.component';
+import { ShareholderModule } from './demo/view/shareholder/shareholder.module';
+import { MasterAdminModule } from './master-admin/master-admin.module';
+import { AnalystAdminModule } from './analyst-admin/analyst-admin.module';
+import { MutualFundComponent } from './demo/view/shareholder/Menus/mutual-fund/mutual-fund.component';
 
 
 @NgModule({
@@ -32,9 +36,15 @@ import { LoginComponent } from './login/login.component';
                 component:LoginComponent
             },
             {
+                path:'masterAdmin', loadChildren:()=>MasterAdminModule
+            },
+            {
+                path:'analystAdmin', loadChildren:()=>AnalystAdminModule
+            },
+            {
                 path: 'main', component: AppMainComponent,
                 children: [
-                   
+                    {path:'client', loadChildren: () => ShareholderModule},
                     {path: 'utilities/display', component: DisplayComponent},
                     {path: 'utilities/elevation', component: ElevationComponent},
                     {path: 'utilities/flexbox', component: FlexboxComponent},
