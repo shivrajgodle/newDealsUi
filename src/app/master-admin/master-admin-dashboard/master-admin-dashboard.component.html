@@ -1,1 +1,19 @@
-<p>master-admin-dashboard works!</p>
+<div class="layout-topbar">
+  
+    <a class="logo">
+        <img src="assets/layout/images/pwc-logo.jpg" />
+    </a>
+        <button pButton type="text" (click)="onClickMenu()">
+            <i class="pi pi-align-left"></i>
+        </button>
+
+       <div style="float: right; margin: 6px;">
+        <button style="margin: 05px; background-color: green; color: black; font-weight: bold; border-radius: 5px;" (click)="settings()" pButton><i class="pi pi-user"></i> &nbsp; PROFILE</button>
+       <button style="margin: 05px; background-color: crimson; color: black; font-weight: bold;border-radius: 5px;" pButton (click)="logout()"><i class="pi pi-sign-out"></i> &nbsp;LOGOUT</button>
+       <i class="pi pi-cog" style="font-size: xx-large; color: white; margin: 5px; cursor: pointer;"></i>
+    </div>
+    <p-sidebar class="layout-sidebar">
+        Content
+    </p-sidebar>
+
+</div>

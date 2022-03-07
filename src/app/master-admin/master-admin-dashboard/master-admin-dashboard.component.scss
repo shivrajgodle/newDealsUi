@@ -1,0 +1,61 @@
+::ng-deep .layout-topbar{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+    height: 60px;
+    background: #3f4381;
+    /* Old browsers */
+    background: -moz-linear-gradient(-206deg, #474b81 5%, #3f4381 100%);
+    background: -webkit-linear-gradient(-206deg, #484c81 5%, #3f4381 100%);
+    background: linear-gradient(-206deg, #555a92 5%, #3f4381 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#3f4381", endColorstr="#3f4381",GradientType=1 );
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::ng-deep .menu_botton{
+    width: 60px;
+    margin: 5px;
+    height: 50px;
+
+    i{
+        font-size: xx-large;
+        font-weight: bolder ;
+    }
+}
+
+
+img
+{
+    width: 150px;
+    margin:3px;
+    float: left;
+
+}
+
+p-sidebar{
+    margin-top: 100px;
+}
+
+.layout-sidebar {
+    width: 230px;
+    background-color: white;
+    border-right: solid 1px rgb(240, 230, 230);
+    position: fixed;
+    // z-index: 999;
+    // top: 60px;
+    left: 0;
+    height: 100%;
+    overflow: auto;
+    // @include border-box();
+    // @include transition(left $transitionDuration);
+    // @if variable-exists(menuBgImage) {
+    //     background-image: url("../images/special/#{$menuBgImage}");
+    //     background-size: 240px 100%;
+    //     background-repeat: no-repeat;
+    // }
+}
+// style="width: 150px; margin-top: 3px; margin-left: 5px; float:left" alt="PWC-logo"

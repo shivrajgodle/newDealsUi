@@ -66,7 +66,7 @@ export class AppMainComponent {
 
         if (!this.menuClick) {
             if (this.isHorizontal() || this.isSlim()) {
-                this.menuService.reset();
+               // this.menuService.reset();
             }
 
             if (this.overlayMenuActive || this.staticMenuMobileActive) {

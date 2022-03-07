@@ -142,6 +142,7 @@ import interactionPlugin from '@fullcalendar/interaction';
 import {EditorModule} from 'primeng/editor';
 import { LoginComponent } from './login/login.component';
 import { ConfirmationService, MessageService } from 'primeng/api';
+import { MasterAdminModule } from './master-admin/master-admin.module';
 
 
 
@@ -242,7 +243,8 @@ FullCalendarModule.registerPlugins([
         VirtualScrollerModule,
         AppCodeModule,
         DialogModule,
-        FlexLayoutModule
+        FlexLayoutModule,
+        MasterAdminModule
     ],
     declarations: [
         AppComponent,

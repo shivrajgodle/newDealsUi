@@ -6,6 +6,8 @@ import { MasterAdminDashboardComponent } from './master-admin-dashboard/master-a
 import { AppTopBarComponent } from '../app.topbar.component';
 import { AppModule } from '../app.module';
 import { TopbarComponent } from './topbar/topbar.component';
+import {ButtonModule} from 'primeng/button';
+import { SharedModuleModule } from '../shared-module/shared-module.module';
 
 
 @NgModule({
@@ -15,7 +17,8 @@ import { TopbarComponent } from './topbar/topbar.component';
   ],
   imports: [
     CommonModule,
-    MasterAdminRoutingModule
+    MasterAdminRoutingModule,
+    SharedModuleModule
   ]
 })
 export class MasterAdminModule { }
