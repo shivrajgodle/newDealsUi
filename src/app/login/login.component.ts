@@ -27,15 +27,15 @@ export class LoginComponent implements OnInit {
 
         console.log(this.data);
 
-        if(project.value.username==='akki' && project.value.password==='1760')
+        if(project.value.username==='c' && project.value.password==='c')
         {
             this.router.navigate(["/main/client"]);
         }
-        else if(project.value.username==='shiv' && project.value.password==='123')
+        else if(project.value.username==='ma' && project.value.password==='ma')
         {
             this.router.navigate(['/masterAdmin'])
         }
-        else if(project.value.username==='akshay' && project.value.password==='123')
+        else if(project.value.username==='aa' && project.value.password==='aa')
         {
             this.router.navigate(['/analystAdmin'])
         }

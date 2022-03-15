@@ -145,7 +145,6 @@ import { ConfirmationService, MessageService } from 'primeng/api';
 import { MasterAdminModule } from './master-admin/master-admin.module';
 
 
-
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
     timeGridPlugin,
@@ -285,7 +284,7 @@ FullCalendarModule.registerPlugins([
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
         CountryService, CustomerService, EventService, IconService, NodeService,
-        PhotoService, ProductService, MenuService, BreadcrumbService, MessageService, ConfirmationService
+        PhotoService, ProductService, MenuService, BreadcrumbService, MessageService, ConfirmationService,
     ],
     bootstrap: [AppComponent]
 })

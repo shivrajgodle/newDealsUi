@@ -1,0 +1,21 @@
+.fb{
+    text-align: center;
+    color: blue;
+  }
+  ::ng-deep .pagination {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  table {
+    width: 100%;
+  }
+  
+  th {
+    text-align: center;
+  }
+  td {
+    text-align: center;
+  }
+  // tr:hover {background-color: coral;}

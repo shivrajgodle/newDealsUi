@@ -1,1 +1,71 @@
-<p>mutual-fund works!</p>
+<h1 style="text-align: center;">Stock Market Analysis</h1>
+<div class="fb">
+  <h2>{{stockSymbol}}</h2>
+
+  <!-- <input type="text" [(ngModel)]="stockSymbol" > -->
+  <input type="text" pInputText [(ngModel)]="stockSymbol" />
+
+  <p-button (onClick)="sendStock(stockSymbol)">show data</p-button>
+</div>
+<plotly-plot [(data)]="graph.data" [layout]="graph.layout"></plotly-plot>
+<!-- <plotly-plot></plotly-plot> -->
+<div>
+  <!-- <p-table >
+      <tr >
+        <th>date</th>
+        <th>Open</th>
+      </tr>
+      <tr>
+        <td *ngFor="let item of stockChartXValuesFunction">{{item}}</td>
+        <td *ngFor="let item of stockChartYValuesFunction">{{item}}</td>
+
+      </tr>
+    </p-table>
+</div> -->
+
+<div style="overflow-x:auto;" >
+  <table border="1" cellpadding="5" cellspacing="5" class="pagination" pagi>
+    <tr>
+      <th>Date</th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+      <th>Volume</th>
+    </tr>
+    <tr>
+      <td>
+        <div *ngFor="let item of stockChartXValuesFunction">
+          <p>{{item }}</p>
+        </div>
+      </td>
+      <td>
+        <div *ngFor="let item of stockChartYValuesFunction">
+          <p>{{item }}</p>
+        </div>
+      </td>
+      <td>
+        <div *ngFor="let item of stockChartHValuesFunction">
+          <p>{{item }}</p>
+        </div>
+      </td>
+      <td>
+        <div *ngFor="let item of stockChartLValuesFunction">
+          <p>{{item }}</p>
+        </div>
+      </td>
+      <td>
+        <div *ngFor="let item of stockChartCValuesFunction">
+          <p>{{item }}</p>
+        </div>
+      </td>
+
+      <td>
+        <div *ngFor="let item of stockChartVValuesFunction">
+          <p>{{item }}</p>
+        </div>
+      </td>
+
+    </tr>
+  </table>
+</div>
